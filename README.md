@@ -21,3 +21,8 @@ docker run --rm \
 ```
 
 The build will produce an executable `haproxy-gen-alpine` in the `dist` directory.
+
+## Options
+
+Set `-e SKIP_GLIDE=1` to skip the `glide install` step, which is useful when a previous build
+in the same workspace has already done this step.

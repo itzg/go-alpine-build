@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -f glide.yaml ]; then
+if [ -f glide.yaml -a x$SKIP_GLIDE != x1 ]; then
   glide install
 fi
 
